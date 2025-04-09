@@ -1,0 +1,128 @@
+CRITICAL - 2025-04-09 02:04:41 --> ErrorException: Undefined variable $has_current_table
+[Method: GET, Route: /]
+in APPPATH\Views\client\index.php on line 133.
+ 1 APPPATH\Views\client\index.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $has_current_table', 'D:\\xampp\\htdocs\\webnangcao\\codeigniter\\app\\Views\\client\\index.php', 133)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\app\\Views\\client\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('client/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 02:05:03 --> ErrorException: Undefined variable $has_current_table
+[Method: GET, Route: /]
+in APPPATH\Views\client\index.php on line 133.
+ 1 APPPATH\Views\client\index.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $has_current_table', 'D:\\xampp\\htdocs\\webnangcao\\codeigniter\\app\\Views\\client\\index.php', 133)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\app\\Views\\client\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('client/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 02:05:46 --> ParseError: Unmatched '}'
+[Method: GET, Route: /]
+in APPPATH\Views\client\index.php on line 164.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('client/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 02:05:46 --> ParseError: Unmatched '}'
+[Method: GET, Route: /]
+in APPPATH\Views\client\index.php on line 164.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('client/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:05:02 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:06:15 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:06:15 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:06:16 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:08:52 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-09 03:08:53 --> TypeError: view(): Argument #1 ($name) must be of type string, null given, called in D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\BaseController.php on line 64
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\BaseController.php(64): view(null, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->giaodienClient([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
