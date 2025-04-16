@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +8,8 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="">
-    <base href="<?= base_url() ?>">
+    <meta name="author" content="">    
+    <base href="<?= base_url()?>">
     <link rel="icon" href="#">
     <title>TH Team</title>
     <!-- Bootstrap core CSS -->
@@ -26,17 +25,14 @@
             padding: 15px;
             border-radius: 4px;
         }
-
         .table-alert.info {
             background-color: #d9edf7;
             border: 1px solid #bce8f1;
             color: #31708f;
         }
-
         .table-card {
             position: relative;
         }
-
         .table-status {
             position: absolute;
             top: 10px;
@@ -47,11 +43,9 @@
             font-weight: bold;
             z-index: 1;
         }
-
         .status-occupied {
             background-color: #d9534f;
         }
-
         .status-available {
             background-color: #5cb85c;
         }
@@ -61,8 +55,8 @@
 <body class="home">
 
     <!--header starts-->
-    <?= $header ?>
-
+    <?=$header?>
+<!-- ?php include("header.php");  ? -->
     <!-- banner part starts -->
     <section class="how-it-works">
         <div class="container">
@@ -88,7 +82,7 @@
                                 </div>
                                 <h3>Lựa chọn bàn </h3>
                                 <p>Chúng tôi luôn cung cấp các danh sách món ăn ngon tới bạn
-                                </p>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -113,10 +107,10 @@
                         class="col-xs-12 col-sm-12 col-md-4 how-it-works-steps white-txt col3">
                         <div class="step step-3">
                             <div class="icon" data-step="3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
-                                    <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
-                                    <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+  <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+  <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
+</svg>
                             </div>
                             <h3>Thanh toán</h3>
                             <p>Đặt món mà bạn muốn và sau đó thanh toán.
@@ -132,15 +126,18 @@
             </div>
         </div>
     </section>
-
+   
     <section class="popular">
-
+        <div class="container">
+            
+        </div>
     </section>
     <!-- Popular block ends -->
     <!-- How it works block starts -->
-
-    <?= $footer ?>
-
+    
+        <?=$footer?>
+    
+    <!-- ?php include 'footer.php' ? -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="js/jquery.min.js"></script>
@@ -152,7 +149,9 @@
     <script src="js/headroom.js"></script>
     <script src="js/foodpicky.min.js"></script>
     <script>
-
+    function alertCurrentTable() {
+        alert('Bạn đang ngồi tại <?php echo isset($current_table) ? $current_table['title'] : ''; ?>. Vui lòng sử dụng nút "Đổi bàn" trên thanh điều hướng nếu muốn đổi bàn khác.');
+    }
     </script>
 </body>
 

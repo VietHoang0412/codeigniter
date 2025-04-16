@@ -9,7 +9,12 @@
                     <li class="nav-item"> <a class="nav-link active" href="index.php">Trang Chủ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Chọn bàn <span class="sr-only"></span></a> </li>
-                   
+                    <li class="nav-item"> <a class="nav-link active" href="order_details.php">Đơn đã đặt</a> </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link active" href="#" data-toggle="modal" data-target="#changeTableModal">
+                            <i class="fa fa-exchange"></i> Đổi bàn
+                        </a> 
+                    </li>
                 </ul>
             </div>
         </div>
@@ -21,14 +26,14 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="changeTableModalLabel">Xác nhận thoát bàn</h5>
+                <h5 class="modal-title" id="changeTableModalLabel">Xác nhận đổi bàn</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p class="text-danger"><strong>Lưu ý:</strong> Khi thoát bàn, tất cả đơn đặt của bàn hiện tại sẽ bị hủy.</p>
-                <p>Bạn có chắc chắn muốn thoát bàn không?</p>
+                <p class="text-danger"><strong>Lưu ý:</strong> Khi đổi bàn, tất cả đơn đặt của bàn hiện tại sẽ bị hủy.</p>
+                <p>Bạn có chắc chắn muốn đổi bàn không?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>

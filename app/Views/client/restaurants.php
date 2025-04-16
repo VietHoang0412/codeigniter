@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <base href="<?= base_url() ?>">
+    <meta name="author" content="">      
+    <base href="<?= base_url()?>">
     <link rel="icon" href="#">
     <title>Chọn bàn</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -123,6 +121,22 @@
                         <div class="bg-gray restaurant-entry">
                             <div class="row">
                                 
+                                <div class="col-xs-12 col-sm-6 col-md-4 food-item">
+                                    <div class="food-item-wrap table-card">
+                                        <div class="table-status "></div>
+                                        <div class="figure-wrap">
+                                            <img src="admin/Res_img/" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="" ></a></h5>
+                                            <div class="product-name"></div>
+                                            <div class="price-btn-block">
+                                                <span class="price">Số người hiện tại: 0/20</span>
+                                                <a href="" class="btn theme-btn-dash pull-right">Chọn bàn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,9 +144,8 @@
             </div>
         </div>
     </section>
-    <?= $footer ?>
-
     </div>
+    <?=$footer?>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="js/jquery.min.js"></script>
@@ -143,7 +156,8 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/headroom.js"></script>
     <script src="js/foodpicky.min.js"></script>
-  
+    <script>
+    </script>
 </body>
 
 </html>
