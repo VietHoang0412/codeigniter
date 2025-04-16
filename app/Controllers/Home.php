@@ -10,4 +10,10 @@ class Home extends BaseController
         $data = $this -> giaodienClient($data);
         return view('client/index',$data);
     }
+    public function restaurants(): string
+    {
+        $data = [];
+        $data = $this -> giaodienClient($data);
+        return view('client/restaurants',$data);
+    }
 }
