@@ -64,13 +64,12 @@ abstract class BaseController extends Controller
         //data=['header','footer']
         return $data;
     }
-    public function giaodienClient($data, $content = null, $dataContent = []){
-        $data['header'] = view('client/header');
-        $data['footer'] = view('client/footer');
+    public function giaodienAdmin($data, $content = null, $dataContent =[]){
+        $data['header'] = view('admin/header');
         if(!is_null($content)){
-            $data['content'] = view($content, $dataContent);
+            $data['content']= view($content, $dataContent);
         }
-       
+        //data=['header','footer']
         return $data;
     }
     

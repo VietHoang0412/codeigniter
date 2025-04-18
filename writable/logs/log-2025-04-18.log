@@ -1,0 +1,36 @@
+CRITICAL - 2025-04-18 01:28:55 --> Error: Call to undefined method App\Controllers\admin\LoginController::initController()
+[Method: GET, Route: ad]
+in SYSTEMPATH\CodeIgniter.php on line 904.
+ 1 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-18 01:33:08 --> Error: Call to undefined method App\Controllers\admin\LoginController::initController()
+[Method: GET, Route: ad]
+in SYSTEMPATH\CodeIgniter.php on line 904.
+ 1 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-18 01:33:45 --> Error: Call to undefined method App\Controllers\admin\LoginController::initController()
+[Method: GET, Route: ad]
+in SYSTEMPATH\CodeIgniter.php on line 904.
+ 1 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')
+CRITICAL - 2025-04-18 01:33:46 --> Error: Call to undefined method App\Controllers\admin\LoginController::initController()
+[Method: GET, Route: ad]
+in SYSTEMPATH\CodeIgniter.php on line 904.
+ 1 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\webnangcao\\codeigniter\\public\\index.php')

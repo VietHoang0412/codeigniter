@@ -11,4 +11,8 @@ $routes->get('/', 'Home::index');
 /// ::restaurants => hàm trong controller
 //nhánh main -> sửa nhánh main
 ///asdasdsad
-$routes->get('/res', 'Home::restaurants');
+$routes->get('/restaurants', 'Home::restaurants');
+$routes->group('admin',function($routes){
+    $routes->get('login','admin\login::index');
+    $routes->get('dashboard','admin\dashboard::index');
+});
