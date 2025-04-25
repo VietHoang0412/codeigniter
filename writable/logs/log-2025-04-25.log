@@ -1,0 +1,20 @@
+ERROR - 2025-04-25 01:14:50 --> mysqli_sql_exception: Unknown column 'submit1' in 'field list' in D:\xampp\htdocs\webnangcao\codeigniter\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\webnangcao\codeigniter\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\xampp\htdocs\webnangcao\codeigniter\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\xampp\htdocs\webnangcao\codeigniter\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\xampp\htdocs\webnangcao\codeigniter\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\xampp\htdocs\webnangcao\codeigniter\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\webnangcao\codeigniter\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\webnangcao\codeigniter\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\webnangcao\codeigniter\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\webnangcao\codeigniter\app\Services\AdminService.php(37): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\webnangcao\codeigniter\app\Controllers\admin\Login.php(18): App\Services\AdminService->themAdmin(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 D:\xampp\htdocs\webnangcao\codeigniter\system\CodeIgniter.php(933): App\Controllers\admin\Login->create()
+#11 D:\xampp\htdocs\webnangcao\codeigniter\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Login))
+#12 D:\xampp\htdocs\webnangcao\codeigniter\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp\htdocs\webnangcao\codeigniter\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 D:\xampp\htdocs\webnangcao\codeigniter\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\xampp\htdocs\webnangcao\codeigniter\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\xampp\htdocs\webnangcao\codeigniter\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#17 {main}

@@ -1,85 +1,170 @@
 <?php
 
 namespace App\Services;
-use App\Models\AdminModel;//Gọi đến file AdminModel
+
+use App\Models\AdminModel; //Gọi đến file AdminModel
 use Exception;
+
 class AdminService extends BaseService
 {
     private $admins; //Biến cục bộ
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
-        $this -> admins = new AdminModel();//Khởi tạo đối tượng và gán vào admins
-        $this -> admins -> protect(false); //Bảo vệ bảng
+        $this->admins = new AdminModel(); //Khởi tạo đối tượng và gán vào admins
+        $this->admins->protect(false); //Bảo vệ bảng
         ///admins => CONNECT tới bảng admin
     }
     //Hàm lấy tất cả dữ liệu trong bảng Admin
-    public function layTatCaDataAdmin(){
+    public function layTatCaDataAdmin()
+    {
         return $this->admins->findAll();
     }
-    public function layDataAdminTheoUsername($username){
-        return $this->admins->where('username', $username) ->first();
+    public function layDataAdminTheoUsername($username)
+    {
+        return $this->admins->where('username', $username)->first();
     }
 
-    public function themAdmin($requestData){
+    public function themAdmin($requestData)
+    {
         $validate = $this->validationThemAdmin($requestData);
-        if($validate->getErrors()){
-            
+        if ($validate->getErrors()) {
+
             return [
-                'status'=> 'ERROR',
-                'messageCode'=>'MESSAGE_ERROR',
-                'messages'=> $validate->getErrors()
+                'status' => 'ERROR',
+                'messageCode' => 'MESSAGE_ERROR',
+                'messages' => $validate->getErrors()
             ];
-        }else{
+        } else {
             try {
                 $dataSave = $requestData->getPost();
                 unset($dataSave['repassword']);
                 $dataSave['password'] = password_hash($dataSave['password'], PASSWORD_BCRYPT);
                 $this->admins->save($dataSave);
                 return [
-                    'status'=> 'SUCCESS',
-                    'messageCode'=>'MESSAGE_SUCCESS',
-                    'messages'=> ['MESSAGE_SUCCESS'=>'Đăng ký thành công']
+                    'status' => 'SUCCESS',
+                    'messageCode' => 'MESSAGE_SUCCESS',
+                    'messages' => ['MESSAGE_SUCCESS' => 'Đăng ký thành công']
                 ];
             } catch (Exception $e) {
                 return [
-                    'status'=> 'ERROR',
-                    'messageCode'=>'MESSAGE_ERROR',
-                    'messages'=> ['MESSAGE_SUCCESS'=>$e->getMessage()]
+                    'status' => 'ERROR',
+                    'messageCode' => 'MESSAGE_ERROR',
+                    'messages' => ['MESSAGE_SUCCESS' => $e->getMessage()]
                 ];
-            }            
+            }
         }
     }
-    
-    private function validationThemAdmin($requestData){
+
+    private function validationThemAdmin($requestData)
+    {
         //1 mảng trong php
         //$rule = []
         $rule = [
-            'email'=>'required|valid_email',
-            'username'=>'required|max_length[30]|min_length[3]',
-            'password'=>'required|max_length[255]|min_length[11]',
-            'repassword'=>'required|matches[password]',
+            'email' => 'required|valid_email',
+            'username' => 'required|max_length[30]|min_length[1]',
+            'password' => 'required|max_length[255]|min_length[1]',
+            'repassword' => 'required|matches[password]',
         ];
         $message = [
-            'email'=>[
-                'required'=>'Địa chỉ email không được để trống',
-                'valid_email'=>'Email nhập sai định dạng'
+            'email' => [
+                'required' => 'Địa chỉ email không được để trống',
+                'valid_email' => 'Email nhập sai định dạng'
             ],
-            'username'=>[
-                'required'=>'Tên tài khoản không được để trống',
-                'max_length'=>'Tên tài khoản tối đa {param} ký tự',
-                'min_length'=>'Tên tài khoản ít nhất {param} ký tự'
+            'username' => [
+                'required' => 'Tên tài khoản không được để trống',
+                'max_length' => 'Tên tài khoản tối đa {param} ký tự',
+                'min_length' => 'Tên tài khoản ít nhất {param} ký tự'
             ],
-            'password'=>[
-                'required'=>'Mật khẩu không được để trống',
-                'max_length'=>'Mật khẩu tối đa {param} ký tự',
-                'min_length'=>'Mật khẩu ít nhất {param} ký tự'
+            'password' => [
+                'required' => 'Mật khẩu không được để trống',
+                'max_length' => 'Mật khẩu tối đa {param} ký tự',
+                'min_length' => 'Mật khẩu ít nhất {param} ký tự'
             ],
-            'repassword'=>[
-                'required'=>'Nhập lại mật khẩu không được để trống',
-                'matches'=>'Mật khẩu nhập lại không khớp',
+            'repassword' => [
+                'required' => 'Nhập lại mật khẩu không được để trống',
+                'matches' => 'Mật khẩu nhập lại không khớp',
             ]
         ];
-        $this->validation->setRules($rule,$message);
+        $this->validation->setRules($rule, $message);
+        //validation = [[rule],[message]]
+        $this->validation->withRequest($requestData)->run();
+        return $this->validation;
+    }
+
+    // <-----------------------> 
+
+    public function kiemtraLogin($requestData)
+    {
+        $validate = $this->validationLogin($requestData);
+        if ($validate->getErrors()) {
+
+            return [
+                'status' => 'ERROR',
+                'messageCode' => 'MESSAGE_ERROR',
+                'messages' => $validate->getErrors()
+            ];
+        } else {
+            try {
+                $data = $requestData->getPost();
+                $user = $this->admins->where('username', $data['username'])->first();
+                if (!$user) {
+                    return [
+                        'status' => 'ERROR',
+                        'messageCode' => 'ERROR',
+                        'messages' => ['khongtontai' => 'Tài khoản không tồn tại']
+                    ];
+                }
+                if (!password_verify($data['password'], $user['password'])) {
+                    return [
+                        'status' => 'ERROR',
+                        'messageCode' => 'ERROR',
+                        'messages' => ['matkhauloi' => 'Mật khẩu không khớp']
+                    ];
+                }
+                $session = session();
+                unset($user['password']);
+                $session->set('user_login', $user);
+                return [
+                    'status' => 'OK',
+                    'messageCode' => 'OK',
+                    'messages' => NULL
+                ];
+            } catch (Exception $e) {
+                return [
+                    'status' => 'ERROR',
+                    'messageCode' => 'MESSAGE_ERROR',
+                    'messages' => ['MESSAGE_SUCCESS' => $e->getMessage()]
+                ];
+            }
+        }
+    }
+
+    private function validationLogin($requestData)
+    {
+        //1 mảng trong php
+        //$rule = []
+        $rule = [
+
+            'username' => 'required|max_length[30]|min_length[1]',
+            'password' => 'required|max_length[255]|min_length[1]',
+
+        ];
+        $message = [
+
+            'username' => [
+                'required' => 'Tên tài khoản không được để trống',
+                'max_length' => 'Tên tài khoản tối đa {param} ký tự',
+                'min_length' => 'Tên tài khoản ít nhất {param} ký tự'
+            ],
+            'password' => [
+                'required' => 'Mật khẩu không được để trống',
+                'max_length' => 'Mật khẩu tối đa {param} ký tự',
+                'min_length' => 'Mật khẩu ít nhất {param} ký tự'
+            ]
+
+        ];
+        $this->validation->setRules($rule, $message);
         //validation = [[rule],[message]]
         $this->validation->withRequest($requestData)->run();
         return $this->validation;
