@@ -1,0 +1,28 @@
+CRITICAL - 2025-05-17 03:02:50 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: POST, Route: admin/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:03 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: POST, Route: admin/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:12 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:13 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:20 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: GET, Route: admin/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:21 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: GET, Route: admin/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 03:03:25 --> ErrorException: Could not check compatibility between App\Filters\AuthFilter::after(CodeIgniter\HTTP\RequestInterface $request, CachingIter\HTTP\ResponseInterface $response, $arguments = null) and CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = null), because class CachingIter\HTTP\ResponseInterface is not available
+[Method: GET, Route: admin/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

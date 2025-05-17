@@ -19,8 +19,15 @@ class Login extends BaseController
         return redirect()->back()->withInput()->with($result['messageCode'],$result['messages']);
     }
     public function login(){
-        $result = $this -> service -> kiemtraLogin($this ->request)
-        
+        $result = $this->service->kiemtraLogin($this->request);
+        if($result['status']=='OK'){
+            return redirect("admin/dashboard");
+        }
+        return redirect("admin/login");
+    }
+    public function logout(){
+        $session = session();
+         $session -> destroy();
         return redirect("admin/login");
     }
 }
