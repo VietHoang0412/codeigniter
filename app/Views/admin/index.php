@@ -41,7 +41,7 @@
 		<span style="color:red;"></span>
 		<span style="color:green;"></span>
 		<div class="form-dangnhap">
-			<form class="login-form" action="index.php" method="post">
+			<form class="login-form" action="create" method="post">
 				<input type="text" placeholder="username" name="username" />
 				<input type="password" placeholder="password" name="password" />
 				<input type="submit" name="submit" value="Đăng nhập" />
