@@ -35,7 +35,7 @@
                             alt="user" class="profile-pic" /></a>
                     <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                         <ul class="dropdown-user">
-                            <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
+                            <li><a href="/admin/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                     </div>
                 </li>
@@ -64,8 +64,8 @@
                 <li> <a class="has-arrow" href="#" aria-expanded="false">
                         <i class="fa fa-cutlery"></i><span>Quản lý món ăn</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="all_menu.php">Danh sách món</a></li>
-                        <li><a href="add_menu.php">Thêm món mới</a></li>
+                        <li><a href="/admin/foods">Danh sách món</a></li>
+                        <li><a href="/admin/foods/add">Thêm món mới</a></li>
                     </ul>
                 </li>
 
